@@ -1,0 +1,4 @@
+Working code for chatbox, can be used as an integration.
+Mobile view is buggy, used container div but feel free to fix it.
+JS may contain some useless code, as it was originally meant for "Chatbot" and modified for "Chatbox".
+All the images and js src used are open source.
