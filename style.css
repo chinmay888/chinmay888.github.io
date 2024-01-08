@@ -1,0 +1,34 @@
+.mainbox{
+    position: absolute;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    font-style: italic;
+    color: rgb(219, 212, 33);
+}
+.secondbox{
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 45%;
+}
+
+.btn{
+    border-radius: 10%;
+    border-style: double;
+    margin-top: 10%;
+    background-color: aquamarine;
+}
+.body{
+    position: relative;
+    background-image: url(kk.jpg);
+    image-resolution: 400dpi;
+    
+}
+.text{
+    position: absolute;
+    color: red;
+    margin-left: 33%;
+    margin-top: 20%;
+    font-size: 100px;
+    font-weight: bold;
+}
