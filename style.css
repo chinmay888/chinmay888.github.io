@@ -35,13 +35,13 @@
 @media only screen and (max-width: 800px) {
     .secondbox{ 
         position: absolute;
-        top: 30%;
+        top: 50%;
         left: -8%;
     }
     .text{
         position: absolute;
         text-align: center;
-        right: 20%;
+        right: 15%;
         
     }
   }
