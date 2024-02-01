@@ -1,47 +1,217 @@
-.mainbox{
-    position: absolute;
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align: center;
-    font-style: italic;
-    color: rgb(219, 212, 33);
-}
-.secondbox{
-    position: absolute;
-    margin-top: 15%;
-    margin-left: 45%;
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.btn{
-    border-radius: 10%;
-    border-style: double;
-    margin-top: 10%;
-    background-color: aquamarine;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url();
 }
-.body{
-    position: relative;
-    background-image: url(kk.jpg);
-    image-resolution: 400dpi;
-    
+#about{
+    background-image: url(bg.jpg);
 }
-.text{
-    position: absolute;
-    color: red;
-    margin-left: 33%;
-    margin-top: 20%;
-    font-size: 100px;
+header {
+    background-color: #3498db; 
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+    background-image: url(back2.webp);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+nav {
+    background-color: #2c3e50; 
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
     font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
 }
-@media only screen and (max-width: 800px) {
-    .secondbox{ 
-        position: absolute;
-        top: 65%;
-        left: -8%;
-    }
-    .text{
-        position: absolute;
-        text-align: center;
-        right: 15%;
-        
-    }
+
+nav a:hover {
+    color: #ecf0f1;
+}
+
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    text-align: center;
+    color: #333;
+}
+
+.portfolio-item {
+    position: relative;
+    margin-bottom: 40px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    background: rgba(52, 152, 219, 0.8); 
+    color: #fff;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3,
+.overlay p {
+    margin: 0;
+    color: #fff;
+}
+
+.overlay .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2c3e50; 
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.overlay .btn:hover {
+    background-color: #34495e;
+}
+
+form {
+    display: grid;
+    grid-gap: 20px;
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #3498db;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #3498db; 
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    background-image: url(footer.png);
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Bounce */
+.bouncing-text {
+    position: relative;
+    font-size: 30px;
+     
   }
+  .W, .E, .B, .D, .E, .V, .E, .L, .O, .P, .E, .R{
+    color: #4cc9f0;
+  text-shadow: 0 3px #4361ee, 0 5px #4361ee, 0 7px #4361ee;
+  }
+
+.shadow, .shadow-two {
+  position: absolute;
+  top:82px;
+  z-index:-1;
+}
+
+.shadow:before, .shadow:after, .shadow-two:before, .shadow-two:after {
+  content:"";
+  position: absolute;
+  background-color: rgba(0,0,0,0.4);
+  width: 50px;
+  height:5px;
+  border-radius:50%;
+  top:0;  
+}
+
+.bouncing-text:before {
+  left:0;
+  animation: scale 1s linear infinite;
+}
+
